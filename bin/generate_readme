@@ -1,0 +1,12 @@
+TEMPLATE = <<EOF
+cubeserver
+==========
+
+Federated services for interconnected cubes
+EOF
+
+require 'erb'
+
+template = ERB.new TEMPLATE, 0, "%<>"
+
+puts template.result binding
