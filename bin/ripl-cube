@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+$: << File.dirname(__FILE__)+'/../lib'
+$: << 'lib'
+require 'ripl'
+require 'cubeserver/ripl'
+include Cubeserver::Ripl
+neo = Cubeserver.create
+Ripl.start binding: binding

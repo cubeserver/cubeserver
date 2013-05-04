@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bond (0.4.3)
     crack (0.1.8)
     httparty (0.8.1)
       multi_json
@@ -17,6 +18,8 @@ GEM
       rubyzip
     os (0.9.6)
     rake (10.0.4)
+    ripl (0.7.0)
+      bond (~> 0.4.2)
     rubyzip (0.9.9)
 
 PLATFORMS
@@ -25,3 +28,4 @@ PLATFORMS
 DEPENDENCIES
   neography
   rake
+  ripl
